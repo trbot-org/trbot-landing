@@ -4,44 +4,62 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TRBOT AI Node – Coming Soon</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" href="logo.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Rubik', sans-serif;
       background: linear-gradient(145deg, #111827, #1f2937);
       color: #f9fafb;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      min-height: 100vh;
       text-align: center;
+      overflow: hidden;
+      animation: fadeIn 1s ease-in-out;
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     img.logo {
-      width: 120px;
+      width: 240px;
+      max-width: 90%;
       margin-bottom: 1.5em;
     }
+
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.5em;
+      font-size: 2.7em;
+      margin-bottom: 0.4em;
     }
+
     p {
-      font-size: 1.1em;
-      max-width: 500px;
-      margin-bottom: 1.5em;
+      font-size: 1.15em;
+      max-width: 600px;
+      margin-bottom: 2em;
     }
+
     a.button {
       background-color: #3b82f6;
-      padding: 12px 24px;
+      padding: 14px 30px;
       border-radius: 9999px;
       color: white;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1em;
       transition: background-color 0.3s;
     }
+
     a.button:hover {
       background-color: #2563eb;
     }
+
     .footer {
       position: absolute;
       bottom: 20px;
@@ -51,8 +69,7 @@
   </style>
 </head>
 <body>
-  <img clas<img class="logo" src="./logo.png?v=2" alt="TRBOT Logo" />
-s="logo" src="logo.png" alt="TRBOT Logo" />
+  <img class="logo" src="logo.png" alt="TRBOT Logo" />
   <h1>TRBOT AI Node</h1>
   <p>We’re building the future of autonomous AI infrastructure. Stay tuned for a smarter world powered by TRBOT.</p>
   <a class="button" href="mailto:info@trbot.org">Contact Us</a>
